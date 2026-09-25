@@ -1,0 +1,3 @@
+node_modules
+
+#container: dev-burger-api-2 POSTGRES_USER=admin -e POSTGRES_PASSWORD=123456 -e POSTGRES_DB=dev-burger-db-2 -p 5432:5432 postgres
