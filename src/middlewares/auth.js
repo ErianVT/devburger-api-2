@@ -19,6 +19,7 @@ const authMiddleware = (request, response, next) => {
       console.log(decoded);
       request.userId = decoded.id;
       request.userIsAdmin = decoded.admin;
+      request.userName = decoded.name;
     });
   } catch (_error) {
     return response.status(401).json({ error: 'Invalid token' });
